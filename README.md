@@ -1,6 +1,6 @@
 # React Assignment
 
-<img src="https://media.giphy.com/media/rOqkW1ECPlUZi/giphy.gif" alt="dogs" width="80%"></img>
+<img src="https://media.giphy.com/media/rOqkW1ECPlUZi/giphy.gif" alt="dogs" width="40%"></img>
 
 ##List of requirements:
 
