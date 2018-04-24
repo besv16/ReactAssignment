@@ -2,7 +2,10 @@
 
 <img src="https://media.giphy.com/media/rOqkW1ECPlUZi/giphy.gif" alt="dogs" width="40%"></img>
 
-##List of requirements:
+Assignment to build something small in ReactJS.
+A collaboration between Beatrice Svensson and Emma Alborn 2018
+
+## List of requirements:
 
 * I should be built in ReactJS
 * The project should implement nice graphical user interface.
