@@ -11,26 +11,26 @@ const Dog = ({message}) => (
 )
 const DogList = (props) => (
   <div className="DogList">
-    {props.pictures.map(item => <Dog message={item.message} />)}
+    {props.pictures.map(item => <Dog message={item} />)}
   </div>
 )
 
 class DogContainer extends Component {
   constructor() {
     super();
+    
+    // Declare our Prop
     this.state = {
-      pictures: [],
-    };
+      pictures: ""
+    }
+
+    // Assign our prop the image array from API
+    fetch('http://dog.ceo/api/breed/husky/images')
+      .then(data => data.json())
+      .then(json => this.setState({ pictures: json.message }))
   }
 
 componentDidMount() {
-  fetch('http://dog.ceo/api/breed/husky/images')
-  .then(data => data.json())
-  .then((json) => {
-    this.setState({
-      pictures:json,
-    })
-  })
   // .then(data => {
   //   return results.json();
   // }).then(json => {
